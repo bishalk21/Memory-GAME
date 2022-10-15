@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Project 01 - Memory Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1>Check your Memory</h1>
+      </header>
+
+      <!-- score panel -->
+      <section class="score-panel">
+        <!-- stars -->
+        <ul class="stars">
+          <li><i id="star1" class="fa fa-star star"></i></li>
+          <li><i id="star2" class="fa fa-star star"></i></li>
+          <li><i id="star3" class="fa fa-star star"></i></li>
+        </ul>
+        <!-- timer -->
+        <div class="timeElapsed" id="timeElapsed">
+          <span id="secondsElapsed" class="secondsElapsed">0</span>
+        </div>
+        <!-- moves -->
+        <div class="moves">
+          <span id="movesNumDisplay">0</span>
+        </div>
+        <!-- matched -->
+        <div class="matched">
+          <span id="matchedCoupleDisplay">0</span>
+        </div>
+        <!-- restart -->
+        <div id="restartButton" class="restart" id="again">
+          <i class="fa fa-repeat"></i>
+        </div>
+      </section>
+
+      <!-- gaming deck -->
+      <ul class="deck main" id="deck">
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+        <li class="card box play"></li>
+      </ul>
+
+
+    <!-- previous and currrent score -->
+    <div id="previous-score__container" class="previous-score__container">
+      <h2>Check your Previous Score!</h2>
+      <table class="previous-score__table" id="previous-score__table">
+        <tr>
+          <th colspan="4">Previous Score</th>
+          <tr>
+            <th>Match Number</th>
+            <th>Time Elapsed</th>
+            <th>Moves Number</th>
+            <th>
+                <i id="star1" class="fa fa-star star"></i> Star Rating <i id="star1" class="fa fa-star star"></i>
+            </th>
+          </tr>
+        </tr>
+      </table>
+    </div>
+
+    <!-- THEME -->
+    <section id="pre" class="">
+      <div id="themes">
+        <h2>Choose your theme !</h2>
+        <p id="pokemon" class="themes" title="Pokemon">Pokemon</p>
+        <p id="starwars" class="themes" title="Star Wars">Star Wars</p>
+        <p id="lotr" class="themes" title="Lord of the Ring">Lord of the Ring</p>
+        <p id="disney" class="themes" title="Disney">Disney</p>
+        <p id="pixar" class="themes" title="Pixar">Pixar</p>
+        <p id="harrypotter" class="themes" title="Harry Potter">Harry Potter</p>
+      </div>
+    </section>
+
+    <section id="post" class="hidden">
+      <div>
+        <h2>BRAVO !</h2>
+        <p id="final"></p>
+        <br>
+        <p>
+          <a id="again">Play Again !</a>
+        </p>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
